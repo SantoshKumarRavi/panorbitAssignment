@@ -9,13 +9,13 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const ProfileDetails = () => {
   const {fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile}=useDataLayerValue()
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
+  // const defaultProps = {
+  //   center: {
+  //     lat: 10.99835602,
+  //     lng: 77.01502627
+  //   },
+  //   zoom: 11
+  // };
   return (
   <Box style={{backgroundColor:'orange',width:"100%",height:"89%"}}>
   <Grid style={{height:"100%"}} container >
