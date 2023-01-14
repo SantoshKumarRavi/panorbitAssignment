@@ -1,9 +1,9 @@
 import React from 'react'
 import { useDataLayerValue } from '../Context/UseContext'
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
+import { ListItemButton,ListItemText,ListItemAvatar,Avatar} from '@mui/material';
 
 const ProfileAdditionalUsers = ({increase,currentIndex}) => {
-    const {fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile}=useDataLayerValue()
+    const {fetchedData,setCurrentProfile}=useDataLayerValue()
 
     return (
     <div className='w-100' onClick={()=>
@@ -17,7 +17,7 @@ const ProfileAdditionalUsers = ({increase,currentIndex}) => {
 
       >
       {fetchedData.filter((y,i)=>i===((currentIndex+increase)%fetchedData.length)).map((obj)=>{
-          const{id,name,username,email,phone,profilepicture,website,company:{name:companyName,catchPhrase,bs}}=obj
+          const{id,name,profilepicture}=obj
         return(
             <ListItemButton style={{height:"50px",width:"100%"}}>
                 <ListItemAvatar key={id}  style={{width:"5%"}}>

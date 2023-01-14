@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDataLayerValue } from './Context/UseContext'
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
+import { ListItem,ListItemText,ListItemAvatar,Avatar} from '@mui/material';
 
 const ChatHistory = () => {
-const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile,
-    currentChat,setCurrentChat
+const {fetchedData,
+    currentChat,
 }=useDataLayerValue()
   return (
     <>
@@ -12,7 +12,6 @@ const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProf
                 <div style={{position:"absolute",bottom:"10px",right:"350px",width:"200px",backgroundColor:"darkseagreen"}} >
                 <div  style={{width:"100%"}} className='d-flex flex-column justify-content-center align-items-center'>
                 <div 
-                // style={{display:isChatOpen?"block":"none",width:"150px"}}
                 >
                 {fetchedData.filter((y,i)=>i===currentChat).map((obj)=>{
                     return <div key={obj.id} style={{width:"100%"}}>

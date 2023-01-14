@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDataLayerValue } from '../Context/UseContext'
 import './CardScroll.css';
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar,
-Box, MenuItem, Multiselect,Grid
+import { List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Avatar,
+Box
 } from '@mui/material';
 const CardScrollable = () => {
     const {fetchedData,isHomeOpen,setIsHomeOpen,setCurrentProfile}=useDataLayerValue()

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDataLayerValue } from './Context/UseContext'
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
+import { ListItem,ListItemText,ListItemAvatar,Avatar} from '@mui/material';
 
 const Chats = () => {
-const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile,
-  currentChat,setCurrentChat
+const {isChatOpen,setIsChatOpen,fetchedData,currentProfile
+  ,setCurrentChat
 }=useDataLayerValue()
 
   return (

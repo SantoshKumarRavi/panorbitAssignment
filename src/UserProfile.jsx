@@ -1,8 +1,7 @@
 import React from 'react'
 import { useDataLayerValue } from './Context/UseContext'
 import Chats from './Chats'
-import ProfileAdditionalUsers from './Component/ProfileAdditionalUsers'
-import { Box, MenuItem, Multiselect,Grid, Stack } from "@mui/material";
+import { Box,Grid, Stack } from "@mui/material";
 import {Typography} from "@material-ui/core";
 import ProfileDetails from './ProfileDetails'
 import Post from './Post'
@@ -11,11 +10,11 @@ import Todo from './Todo'
 import ChatHistory from './ChatHistory'
 import SideBar from './SideBar'
 import SignOutCard from './SignOutCard';
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
+import { ListItem,ListItemText,ListItemAvatar,Avatar} from '@mui/material';
 
 const UserProfile = () => {
-    const {fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile,currentTab,setCurrentTab,
-      setIsChatOpen,setCurrentChat,isSignOutOpen,setIsSignOutOpen}=useDataLayerValue()
+    const {fetchedData,isHomeOpen,currentProfile,currentTab,
+      isSignOutOpen,setIsSignOutOpen}=useDataLayerValue()
    
     return (
     <>

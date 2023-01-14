@@ -1,5 +1,4 @@
-import React, { createContext, useContext, useEffect, useReducer, useState } from "react";
-// import users from "./Dummy";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 export const DataLayerContext = createContext();
 
@@ -11,7 +10,6 @@ const[isChatOpen,setIsChatOpen]=useState(false)
 const[currentTab,setCurrentTab]=useState("ProfileDetails")
 const[currentChat,setCurrentChat]=useState(null)
 const[isSignOutOpen,setIsSignOutOpen]=useState(false)
-// const[isCurrentChatOpen,setisCurrentChatOpen]=useState(null)
 
 useEffect(()=>{
 fetch("https://panorbit.in/api/users.json").then((res)=>{
@@ -19,7 +17,6 @@ return res.json()
 }).then((x)=>{
     setData(()=>x.users)
 })
-// setData(()=>users)//dev only 
 },[])
 
 let overallValues={

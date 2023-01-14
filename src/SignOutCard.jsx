@@ -1,11 +1,11 @@
 import React from 'react'
 import ProfileAdditionalUsers from './Component/ProfileAdditionalUsers'
 import { useDataLayerValue } from './Context/UseContext'
-import { Box, MenuItem, Multiselect,Grid, Stack, Typography, Button } from "@mui/material";
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
+import { Box,Stack, Button } from "@mui/material";
+import { ListItemAvatar,Avatar} from '@mui/material';
 
 const SignOutCard = () => {
-    const {fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile,currentTab,setCurrentTab,
+    const {fetchedData,setIsHomeOpen,currentProfile,setCurrentTab,
         setIsChatOpen,setCurrentChat}=useDataLayerValue()
         function signOut(){
             setIsHomeOpen(true)
@@ -17,7 +17,7 @@ const SignOutCard = () => {
     <div style={{position:"absolute",top:"100px",right:"30px",border:"2px solid black"}}>
   <Stack style={{backgroundColor:""}}  direction={'column'} >
   {fetchedData.filter((y,i)=>i===((currentProfile.index))).map((obj)=>{
-    const{id,name,username,email,phone,profilepicture,website,company:{name:companyName,catchPhrase,bs}}=obj
+    const{id,name,email,profilepicture}=obj
         return <React.Fragment key={id}>
                 <Box style={{height:"50px",backgroundColor:"#FFFFFF"}} className='d-flex justify-content-center align-items-center'>
                  <ListItemAvatar  className="h-100">

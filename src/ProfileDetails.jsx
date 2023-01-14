@@ -1,21 +1,10 @@
 import React from 'react'
 import { useDataLayerValue } from './Context/UseContext'
-import { Box, MenuItem, Multiselect,Grid, Stack, Typography } from "@mui/material";
-import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-// import GoogleMapReact from 'google-map-react';
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import { Box,Grid, Stack, Typography } from "@mui/material";
+import {ListItemAvatar,Avatar} from '@mui/material';
 
 const ProfileDetails = () => {
-  const {fetchedData,isHomeOpen,setIsHomeOpen,currentProfile,setCurrentProfile}=useDataLayerValue()
-  // const defaultProps = {
-  //   center: {
-  //     lat: 10.99835602,
-  //     lng: 77.01502627
-  //   },
-  //   zoom: 11
-  // };
+  const {fetchedData,currentProfile,}=useDataLayerValue()
   return (
   <Box style={{backgroundColor:'#FFFFFF',width:"100%",height:"89%"}}>
   <Grid style={{height:"100%"}} container >
@@ -76,21 +65,6 @@ const{address:{street,suite,city,zipcode,geo:{lat,lng}}}=obj
   </Stack>
   </Grid>
 </Grid>
-
-{/* 
-<div style={{ height: '100vh', width: '100%',position:"absolute" }}>
-                <GoogleMapReact
-            bootstrapURLKeys={{ key: "" }}
-            defaultCenter={defaultProps.center}
-            defaultZoom={defaultProps.zoom}
-          >
-    <AnyReactComponent
-              lat={59.955413}
-              lng={30.337844}
-              text="My Marker"
-            />
-          </GoogleMapReact>
-    </div> */}
     </Box>
   )
 }
