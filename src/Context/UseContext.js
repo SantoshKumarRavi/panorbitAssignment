@@ -14,12 +14,12 @@ const[isSignOutOpen,setIsSignOutOpen]=useState(false)
 // const[isCurrentChatOpen,setisCurrentChatOpen]=useState(null)
 
 useEffect(()=>{
-// fetch("https://panorbit.in/api/users.json").then((res)=>{
-// return res.json()
-// }).then((x)=>{
-//     setData(()=>x.users)
-// })
-setData(()=>users)//dev only 
+fetch("https://panorbit.in/api/users.json").then((res)=>{
+return res.json()
+}).then((x)=>{
+    setData(()=>x.users)
+})
+// setData(()=>users)//dev only 
 },[])
 
 let overallValues={
