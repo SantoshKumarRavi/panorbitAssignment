@@ -2,6 +2,10 @@
   "name": "panorbitassign",
   "version": "0.1.0",
   "private": true,
+  "engines" : { 
+    "npm" : "7.17.0",
+    "node" : "16.17.0"
+  },
   "dependencies": {
     "@mui/material": "^5.11.4",
     "@testing-library/jest-dom": "^5.16.5",
