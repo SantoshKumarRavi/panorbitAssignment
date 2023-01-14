@@ -48,7 +48,7 @@ const{address:{street,suite,city,zipcode,geo:{lat,lng}}}=obj
             <Box className='w-100  d-flex justify-content-start'><Typography component={"label"} style={{width:"15%"}} align="right">city</Typography><Typography component={"label"} align="right">:</Typography><Typography align="left"  style={{width:"60%"}} component={"label"}>{city}</Typography> </Box>
             <Box className='w-100  d-flex justify-content-start'><Typography component={"label"} style={{width:"15%"}} align="right">zipcode</Typography><Typography component={"label"} align="right">:</Typography><Typography align="left"  style={{width:"60%"}} component={"label"}>{zipcode}</Typography> </Box>
             <Box className='mx-4'  style={{backgroundColor:"blue",height:"250px",width:"90%"}}>
-              <img  className='w-100 h-100' src="https://www.thestatesman.com/wp-content/uploads/2020/04/googl_ED.jpg"/>
+              <img alt='googleMap'  className='w-100 h-100' src="https://www.thestatesman.com/wp-content/uploads/2020/04/googl_ED.jpg"/>
             </Box>
             <Stack direction={'row'} className="w-100 pe-5 justify-content-end align-items-center">
             <Box >Lat : {lat }&nbsp;&nbsp; </Box>
