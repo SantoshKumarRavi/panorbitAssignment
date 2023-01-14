@@ -35,7 +35,7 @@ const SideBar = () => {
         <Box style={{border:"2px solid black"}} className={classes?.AppBar}>
              <Box  className="d-flex flex-column">
              {Tabs.map((currTab,i)=><div key={i}  style={{marginTop:i==0?"20px":""}} className={classes.link} onClick={()=>setCurrentTab(()=>currTab)}>
-                <Typography style={{color:currentTab===currTab?"blue":"white"}}>{currTab}</Typography>
+                <Typography style={{color:currentTab===currTab?"blue":"black"}}>{currTab}</Typography>
                 {(i!==(Tabs.length-1))&&<hr/>}
                 </div>)}
              </Box>

@@ -17,14 +17,14 @@ const ProfileDetails = () => {
   //   zoom: 11
   // };
   return (
-  <Box style={{backgroundColor:'orange',width:"100%",height:"89%"}}>
+  <Box style={{backgroundColor:'#FFFFFF',width:"100%",height:"89%"}}>
   <Grid style={{height:"100%"}} container >
-  <Grid  style={{backgroundColor:"yellow",height:"100%"}} className='d-flex justify-content-center' item xs={12} md={4} lg={4} sm={12}>
+  <Grid  style={{backgroundColor:"#FFFFFF",height:"100%"}} className='d-flex justify-content-center' item xs={12} md={4} lg={4} sm={12}>
   <Stack style={{width:"100%"}}  direction={'column'} >
   {fetchedData.filter((y,i)=>i===((currentProfile.index))).map((obj)=>{
     const{name,username,email,phone,website,company:{name:companyName,catchPhrase,bs}}=obj
         return <React.Fragment key={obj.id}>
-                <Box style={{height:"150px",backgroundColor:"red"}} className='d-flex justify-content-center align-items-center'>
+                <Box style={{height:"150px",backgroundColor:"#FFFFFF"}} className='d-flex justify-content-center align-items-center'>
                  <ListItemAvatar  className="h-100">
                     <Avatar
                       alt={`${obj.name}id=${obj.id}`}

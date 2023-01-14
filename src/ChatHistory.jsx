@@ -9,7 +9,7 @@ const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProf
   return (
     <>
     {currentChat!==null&&
-                <div style={{position:"absolute",bottom:"10px",right:"350px",width:"200px"}} >
+                <div style={{position:"absolute",bottom:"10px",right:"350px",width:"200px",backgroundColor:"darkseagreen"}} >
                 <div  style={{width:"100%"}} className='d-flex flex-column justify-content-center align-items-center'>
                 <div 
                 // style={{display:isChatOpen?"block":"none",width:"150px"}}
@@ -17,7 +17,7 @@ const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProf
                 {fetchedData.filter((y,i)=>i===currentChat).map((obj)=>{
                     return <div key={obj.id} style={{width:"100%"}}>
                             <ListItem
-                                style={{backgroundColor:"blue"}}
+                                style={{backgroundColor:"blue",color:"#FFFFFF"}}
                             >
                             <ListItemAvatar>
                             <Avatar
@@ -27,13 +27,13 @@ const {isChatOpen,setIsChatOpen,fetchedData,isHomeOpen,setIsHomeOpen,currentProf
                             </ListItemAvatar>
                             <ListItemText  primary={`${obj.name}`} />
                             </ListItem>
-                        <div style={{backgroundColor:"#FFFFFF",width:"150px"}} className='d-flex flex-column align-items-end'>
-                        <div style={{backgroundColor:"ActiveBorder",marginBottom:"5px"}}>chat messages </div>
-                        <div style={{backgroundColor:"ActiveBorder",marginBottom:"5px"}}>chat messages </div>
-                        <div style={{backgroundColor:"ActiveBorder",marginBottom:"5px"}}>chat messages </div>
-                        <div style={{backgroundColor:"ActiveBorder",marginBottom:"5px"}}>chat messages </div>
+                        <div style={{width:"150px"}} className='d-flex flex-column align-items-end'>
+                        <div style={{backgroundColor:"#FFFFFF",marginBottom:"5px",color:"black"}}>chat messages </div>
+                        <div style={{backgroundColor:"#FFFFFF",marginBottom:"5px",color:"black"}}>chat messages </div>
+                        <div style={{backgroundColor:"#FFFFFF",marginBottom:"5px",color:"black"}}>chat messages </div>
+                        <div style={{backgroundColor:"#FFFFFF",marginBottom:"5px",color:"black"}}>chat messages </div>
                         </div>
-                        <div className='w-100 h-100' style={{border:"2px solid black"}}>
+                        <div className='w-100 h-100' style={{border:"2px solid black",backgroundColor:"#FFFFFF"}}>
                             &nbsp;
                              </div>
 

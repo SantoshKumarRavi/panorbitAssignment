@@ -12,7 +12,10 @@ const ProfileAdditionalUsers = ({increase,currentIndex}) => {
             ...fetchedData[((currentIndex+increase)%fetchedData.length)],
             index:((currentIndex+increase)%fetchedData.length)
           }})
-      }>
+      }
+      style={{backgroundColor:"#FFFFFF"}}
+
+      >
       {fetchedData.filter((y,i)=>i===((currentIndex+increase)%fetchedData.length)).map((obj)=>{
           const{id,name,username,email,phone,profilepicture,website,company:{name:companyName,catchPhrase,bs}}=obj
         return(

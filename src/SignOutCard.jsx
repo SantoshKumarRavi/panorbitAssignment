@@ -14,12 +14,12 @@ const SignOutCard = () => {
             setCurrentChat(null)
         }
   return (
-    <div style={{position:"absolute",top:"100px",right:"30px"}}>
-  <Stack style={{backgroundColor:"blue"}}  direction={'column'} >
+    <div style={{position:"absolute",top:"100px",right:"30px",border:"2px solid black"}}>
+  <Stack style={{backgroundColor:""}}  direction={'column'} >
   {fetchedData.filter((y,i)=>i===((currentProfile.index))).map((obj)=>{
     const{id,name,username,email,phone,profilepicture,website,company:{name:companyName,catchPhrase,bs}}=obj
         return <React.Fragment key={id}>
-                <Box style={{height:"50px",backgroundColor:"red"}} className='d-flex justify-content-center align-items-center'>
+                <Box style={{height:"50px",backgroundColor:"#FFFFFF"}} className='d-flex justify-content-center align-items-center'>
                  <ListItemAvatar  className="h-100">
                     <Avatar
                       alt={`${name}id=${id}`}
@@ -40,8 +40,8 @@ const SignOutCard = () => {
          )}
         <ProfileAdditionalUsers increase={1} currentIndex={currentProfile.index}/>
         <ProfileAdditionalUsers increase={2} currentIndex={currentProfile.index}/>
-        <Box  >
-             <Button style={{backgroundColor:"red"}}onClick={()=>signOut()}>
+        <Box style={{backgroundColor:"#FFFFFF"}}  >
+             <Button style={{backgroundColor:"red",color:"#FFFFFF"}}onClick={()=>signOut()}>
              Sign out
              </Button>
         </Box>
