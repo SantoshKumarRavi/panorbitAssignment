@@ -2,8 +2,8 @@ import React from 'react'
 import { useDataLayerValue } from './Context/UseContext'
 import { Box, MenuItem, Multiselect,Grid, Stack, Typography } from "@mui/material";
 import { Paper,List,ListItem,ListItemButton,ListItemText,ListItemAvatar,Checkbox,Avatar} from '@mui/material';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-import GoogleMapReact from 'google-map-react';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+// import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
