@@ -21,7 +21,7 @@
   "peerDependencies": {
     "@material-ui/core": "^4.12.4",
     "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/styled": "^11.10.5"
 },
   "scripts": {
     "start": "react-scripts start",
