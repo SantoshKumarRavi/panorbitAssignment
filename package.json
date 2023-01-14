@@ -15,13 +15,13 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@mui/material": "^5.11.4"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.12.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.4"
 },
   "scripts": {
     "start": "react-scripts start",
