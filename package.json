@@ -6,7 +6,6 @@
     "npm": "7.17.0",
     "node": "16.17.0"
   },
-  "legacy-peer-deps": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
