@@ -6,6 +6,7 @@
     "npm" : "7.17.0",
     "node" : "16.17.0"
   },
+  "legacy-peer-deps":true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
