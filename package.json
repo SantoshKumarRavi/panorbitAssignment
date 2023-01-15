@@ -7,7 +7,6 @@
     "node" : "16.17.0"
   },
   "legacy-peer-deps":true,
-  "homepage": "https://panorbitsanthoshassignment.netlify.app/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
