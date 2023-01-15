@@ -6,12 +6,13 @@ import { ListItemAvatar,Avatar} from '@mui/material';
 
 const SignOutCard = () => {
     const {fetchedData,setIsHomeOpen,currentProfile,setCurrentTab,
-        setIsChatOpen,setCurrentChat}=useDataLayerValue()
+        setIsChatOpen,setCurrentChat,setIsSignOutOpen}=useDataLayerValue()
         function signOut(){
             setIsHomeOpen(true)
             setCurrentTab("ProfileDetails")
             setIsChatOpen(false)
             setCurrentChat(null)
+            setIsSignOutOpen(false)
         }
   return (
     <div style={{position:"absolute",top:"100px",right:"30px",border:"2px solid black"}}>
